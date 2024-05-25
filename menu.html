@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - Your Steakhouse</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css\styles.css">
 </head>
 <body>
 
@@ -40,22 +40,24 @@
             <li data-modal="modal7">Shrimp Cocktail</li>
         </ul>
 
+        <div class="divider"></div> <!-- Divider line -->
+
         <h2>Steaks & Chops</h2>
         <p>At Ruth's Chris, your last bite is just as good as your first. Our perfected broiling method and seasoning techniques ensure each cut of USDA Prime beef we serve arrives cooked to perfection and sizzling on a 500° plate—just the way Ruth liked it.</p>
-        <ul>
-            <li>New York Strip - 16 oz USDA Prime, richly flavored, slightly firmer</li>
-            <li>Petite Filet - The same incredible cut as the classic, in an 8 oz filet</li>
-            <li>Cowboy Ribeye - Bone-in 22 oz USDA Prime cut</li>
-            <li>Filet - An 11 oz cut of tender, corn-fed midwestern beef</li>
-            <li>Ribeye - 16 oz USDA Prime, marbled for flavor & deliciously juicy</li>
-            <li>Petite Filet & Shrimp - Two tender 4 oz medallions with six large shrimp</li>
-            <li>T-Bone - Full flavored 24 oz USDA Prime cut</li>
-            <li>Porterhouse for Two - 40 oz USDA Prime, richness of a strip, tenderness of a filet</li>
+        <ul class="steak-list">
+            <li data-modal="modal8">New York Strip - 16 oz USDA Prime, richly flavored, slightly firmer</li>
+            <li data-modal="modal9">Petite Filet - The same incredible cut as the classic, in an 8 oz filet</li>
+            <li data-modal="modal10">Cowboy Ribeye - Bone-in 22 oz USDA Prime cut</li>
+            <li data-modal="modal11">Filet - An 11 oz cut of tender, corn-fed midwestern beef</li>
+            <li data-modal="modal12">Ribeye - 16 oz USDA Prime, marbled for flavor & deliciously juicy</li>
+            <li data-modal="modal13">Petite Filet & Shrimp - Two tender 4 oz medallions with six large shrimp</li>
+            <li data-modal="modal14">T-Bone - Full flavored 24 oz USDA Prime cut</li>
+            <li data-modal="modal15">Porterhouse for Two - 40 oz USDA Prime, richness of a strip, tenderness of a filet</li>
         </ul>
     </div>
 </section>
 
-<!-- Modals -->
+<!-- Modals for Appetizers -->
 <div id="modal1" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
@@ -116,6 +118,79 @@
         <img src="obrazky/Shrimp-Cocktail-16x9-1-960x563.jpg" alt="Shrimp Cocktail">
         <h2>Shrimp Cocktail</h2>
         <p>New Orleans cocktail or creamy remoulade sauce.</p>
+    </div>
+</div>
+
+<!-- Modals for Steaks -->
+<div id="modal8" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="obrazky/Hero-Desktop-16x9-Steaks-NY-Strip-960x720.jpg" alt="New York Strip">
+        <h2>New York Strip</h2>
+        <p>16 oz USDA Prime, richly flavored, slightly firmer.</p>
+    </div>
+</div>
+
+<div id="modal9" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="obrazky/Hero-Mobile-1x1-Steaks-Petite-Filet-960x720.jpg" alt="Petite Filet">
+        <h2>Petite Filet</h2>
+        <p>The same incredible cut as the classic, in an 8 oz filet.</p>
+    </div>
+</div>
+
+<div id="modal10" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="obrazky/Cowboy-Ribeye-16x9-1-960x563.jpg" alt="Cowboy Ribeye">
+        <h2>Cowboy Ribeye</h2>
+        <p>Bone-in 22 oz USDA Prime cut.</p>
+    </div>
+</div>
+
+<div id="modal11" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="obrazky/Filet-16x9-1-960x563.jpg" alt="Filet">
+        <h2>Filet</h2>
+        <p>An 11 oz cut of tender, corn-fed midwestern beef.</p>
+    </div>
+</div>
+
+<div id="modal12" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="obrazky\Ribeye-16x9-1-960x563.jpg" alt="Ribeye">
+        <h2>Ribeye</h2>
+        <p>16 oz USDA Prime, marbled for flavor & deliciously juicy.</p>
+    </div>
+</div>
+
+<div id="modal13" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="obrazky/Filet-And-Shrimp-16x9-1-960x563.jpg" alt="Petite Filet & Shrimp">
+        <h2>Petite Filet & Shrimp</h2>
+        <p>Two tender 4 oz medallions with six large shrimp.</p>
+    </div>
+</div>
+
+<div id="modal14" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="obrazky/T-Bone-Steak-16x9-1-960x563.jpg" alt="T-Bone">
+        <h2>T-Bone</h2>
+        <p>Full flavored 24 oz USDA Prime cut.</p>
+    </div>
+</div>
+
+<div id="modal15" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="obrazky/Porterhouse-16x9-1-960x563.jpg" alt="Porterhouse for Two">
+        <h2>Porterhouse for Two</h2>
+        <p>40 oz USDA Prime, richness of a strip, tenderness of a filet.</p>
     </div>
 </div>
 
