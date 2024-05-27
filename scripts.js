@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     var modals = document.querySelectorAll('.modal');
-    var triggers = document.querySelectorAll('[data-modal]');
+    var triggers = document.querySelectorAll('.order-button');
     var closeButtons = document.querySelectorAll('.close');
 
     triggers.forEach(function(trigger) {
@@ -26,3 +26,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
