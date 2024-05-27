@@ -254,7 +254,7 @@ body {
 }
 
 .modal-content {
-  background-color: #333; /* Modal background color */
+  background-color: #ad1124; /* Red background color */
   color: #fff; /* Text color */
   margin: 10% auto; /* 10% from the top and centered */
   padding: 20px;
@@ -286,3 +286,21 @@ body {
   cursor: pointer;
 }
 
+/* Order Button Styles */
+.order-button {
+  display: block;
+  width: 100px;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background-color: #d9534f;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.order-button:hover {
+  background-color: #c9302c;
+}
