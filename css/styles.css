@@ -299,8 +299,20 @@ body {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  position: relative;
 }
 
 .order-button:hover {
   background-color: #c9302c;
+} 
+
+/* Flexbox container for text and button */
+.text-button-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between text and button */
+}
+
+.text-button-container span {
+  font-size: 1.2rem; /* Adjust as needed */
 }
