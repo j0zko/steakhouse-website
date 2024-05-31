@@ -18,7 +18,7 @@ body {
 }
 
 .header {
-  background-image: url("header-image.jpg"); /* Change to your image URL */
+  background-image: url("https://images.pexels.com/photos/1482803/pexels-photo-1482803.jpeg"); /* Change to your image URL */
   background-size: cover;
   background-position: center;
   color: #ffffff;
@@ -27,6 +27,14 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  opacity: 0;
+  animation: fadeInBackground 3s ease-in-out forwards; /* Apply fade-in animation */
+}
+
+@keyframes fadeInBackground {
+  to {
+    opacity: 1;
+  }
 }
 
 .header::before {
@@ -304,7 +312,7 @@ body {
 
 .order-button:hover {
   background-color: #c9302c;
-} 
+}
 
 /* Flexbox container for text and button */
 .text-button-container {
@@ -316,3 +324,65 @@ body {
 .text-button-container span {
   font-size: 1.2rem; /* Adjust as needed */
 }
+
+/* About Us Page Styles */
+.about-section {
+  padding: 40px 0;
+}
+
+.about-section h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ad1124; /* Red color */
+}
+
+.about-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ad1124; /* Red color */
+}
+
+.about-section p {
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Reviews Table */
+.reviews-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 40px 0;
+}
+
+.reviews-table th, .reviews-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+.reviews-table th {
+  background-color: #ad1124;
+  color: white;
+  font-weight: bold;
+}
+
+.reviews-table td {
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .team-member {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .team-member img {
+    margin-bottom: 10px;
+  }
+}
+
+
+
