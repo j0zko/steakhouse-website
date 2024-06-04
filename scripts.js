@@ -1,28 +1,33 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var modals = document.querySelectorAll('.modal');
-    var triggers = document.querySelectorAll('.order-button');
-    var closeButtons = document.querySelectorAll('.close');
-
-    triggers.forEach(function(trigger) {
-        trigger.addEventListener('click', function() {
-            var modalId = this.getAttribute('data-modal');
-            var modal = document.getElementById(modalId);
-            modal.style.display = 'block';
-        });
+document.addEventListener("DOMContentLoaded", () => {
+    const images = document.querySelectorAll(".gallery img");
+    const modal = document.getElementById("modal1");
+    const modalImg = document.createElement("img");
+    const closeModal = document.querySelector(".close");
+  
+    images.forEach(image => {
+      image.addEventListener("click", () => {
+        modal.style.display = "flex";
+        modal.innerHTML = "";
+        modalImg.src = image.src;
+        modal.appendChild(modalImg);
+        const span = document.createElement("span");
+        span.classList.add("close");
+        span.innerHTML = "&times;";
+        modal.appendChild(span);
+        span.onclick = () => {
+          modal.style.display = "none";
+        };
+      });
     });
-
-    closeButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            var modal = this.closest('.modal');
-            modal.style.display = 'none';
-        });
-    });
-
-    window.addEventListener('click', function(event) {
-        modals.forEach(function(modal) {
-            if (event.target === modal) {
-                modal.style.display = 'none';
-            }
-        });
-    });
-});
+  
+    closeModal.onclick = function () {
+      modal.style.display = "none";
+    };
+  
+    window.onclick = function (event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+  });
+  
