@@ -25,10 +25,7 @@
     </header>
 
     <section class="header">
-      <div class="header-content">
-        <h1>Welcome to Your Steakhouse</h1>
-        <p>Experience the finest cuts of steak in a luxurious ambiance.</p>
-      </div>
+      <?php include ('includes/headings.php'); ?>
     </section>
 
     <section id="aboutt" class="about">
@@ -71,7 +68,7 @@
         <div class="image-gallery">
           <div class="image-item">
             <img
-              src="https://th.bing.com/th/id/R.cb7b3f1f08a94f69f9661a95a1d45c9b?rik=BMoU10f6FviHog&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f2%2f2b%2fBeef_fillet_steak_with_mushrooms.jpg&ehk=%2b3iY18UIjUsmMCSHpZZ0wkP3VZWqhu2qL3%2fm%2fvJmU5Y%3d&risl=1&pid=ImgRaw&r=0"
+              src="/home/joe/Desktop/SteakH/steakhouse-website/obrazky/R.jpeg"
               alt="Beef fillet steak with mushrooms"
             />
             <p>
@@ -82,7 +79,7 @@
           </div>
           <div class="image-item">
             <img
-              src="https://i.ytimg.com/vi/le82aA35DEg/hqdefault.jpg"
+              src="/home/joe/Desktop/SteakH/steakhouse-website/obrazky/hqdefault.jpg"
               alt="Steak on grill"
             />
             <p>
@@ -93,7 +90,7 @@
           </div>
           <div class="image-item">
             <img
-              src="https://resizer.otstatic.com/v2/photos/large/24902137.jpg"
+              src="/home/joe/Desktop/SteakH/steakhouse-website/obrazky/steakdish.jpg"
               alt="Steak dish"
             />
             <p>
@@ -118,10 +115,6 @@
       </div>
     </section>
 
-    <footer>
-      <div class="container">
-        <p>&copy; 2024 Your Steakhouse. All rights reserved.</p>
-      </div>
-    </footer>
+    <?php include ('includes/footer.php'); ?>
   </body>
 </html>
